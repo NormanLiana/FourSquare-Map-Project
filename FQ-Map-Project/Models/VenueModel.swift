@@ -12,6 +12,16 @@ import Foundation
 struct Welcome: Codable {
     let meta: Meta
     let response: Response
+    
+    static func decodeVenues(from data: Data) -> [Venue]? {
+        do {
+            let newVenues = try JSONDecoder().decode(Welcome.self, from: data)
+            return newVenues.response.venues
+        } catch let decodeError {
+            print(decodeError)
+            return nil
+        }
+    }
 }
 
 // MARK: - Meta
