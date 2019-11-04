@@ -1,0 +1,1208 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "5dc07e40dd70c5002c42c5e5"
+    },
+    "response": {
+        "venues": [
+            {
+                "id": "53ff2935498e161412b3e871",
+                "name": "Brooklyn Bridge Park - Pier 2 Yoga Court",
+                "location": {
+                    "lat": 40.699657951708524,
+                    "lng": -73.99976911704667,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.699657951708524,
+                            "lng": -73.99976911704667
+                        }
+                    ],
+                    "distance": 42,
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d102941735",
+                        "name": "Yoga Studio",
+                        "pluralName": "Yoga Studios",
+                        "shortName": "Yoga Studio",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/gym_yogastudio_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "51eabef6498e10cf3aea7942",
+                "name": "Brooklyn Bridge Park - Pier 2",
+                "location": {
+                    "address": "Furman St",
+                    "crossStreet": "Brooklyn Bridge Park Greenway",
+                    "lat": 40.69957016220183,
+                    "lng": -73.99793274204788,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69957016220183,
+                            "lng": -73.99793274204788
+                        }
+                    ],
+                    "distance": 180,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Furman St (Brooklyn Bridge Park Greenway)",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d163941735",
+                        "name": "Park",
+                        "pluralName": "Parks",
+                        "shortName": "Park",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "53af4e97498e0bd7ae45c926",
+                "name": "Brooklyn Bridge Park Skating Rink",
+                "location": {
+                    "address": "Pier 2",
+                    "lat": 40.699821897299444,
+                    "lng": -73.99834932863362,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.699821897299444,
+                            "lng": -73.99834932863362
+                        }
+                    ],
+                    "distance": 140,
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Pier 2",
+                        "Brooklyn, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "52e81612bcbc57f1066b79e9",
+                        "name": "Roller Rink",
+                        "pluralName": "Roller Rinks",
+                        "shortName": "Roller Rink",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "5b4149016336be002c941465",
+                "name": "Pier 3 Uplands",
+                "location": {
+                    "lat": 40.697478,
+                    "lng": -73.998241,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.697478,
+                            "lng": -73.998241
+                        }
+                    ],
+                    "distance": 317,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "New York, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d163941735",
+                        "name": "Park",
+                        "pluralName": "Parks",
+                        "shortName": "Park",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4d0d6b7d903d37048116c455",
+                "name": "City Light Cruise",
+                "location": {
+                    "address": "23rd",
+                    "crossStreet": "Fdr drive",
+                    "lat": 40.700825140265614,
+                    "lng": -74.00287943703214,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.700825140265614,
+                            "lng": -74.00287943703214
+                        }
+                    ],
+                    "distance": 259,
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "23rd (Fdr drive)",
+                        "New York, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d12d951735",
+                        "name": "Boat or Ferry",
+                        "pluralName": "Boats or Ferries",
+                        "shortName": "Boat / Ferry",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/boat_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "5284fe6811d2114d599b3e15",
+                "name": "Brooklyn Bridge Park - Pier 3",
+                "location": {
+                    "address": "Brooklyn Bridge Pk Greenway",
+                    "crossStreet": "at Furman St",
+                    "lat": 40.69780332891386,
+                    "lng": -73.99944305419922,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69780332891386,
+                            "lng": -73.99944305419922
+                        }
+                    ],
+                    "distance": 249,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn Bridge Pk Greenway (at Furman St)",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4e74f6cabd41c4836eac4c31",
+                        "name": "Pier",
+                        "pluralName": "Piers",
+                        "shortName": "Piers",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/ferry_pier_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4df50edee4cda09e6da88d90",
+                "name": "Boat Ramp @ Brooklyn Bridge Park",
+                "location": {
+                    "address": "Pier 1",
+                    "crossStreet": "Middagh & Cranberry St",
+                    "lat": 40.701497511781284,
+                    "lng": -73.9979442194463,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.701497511781284,
+                            "lng": -73.9979442194463
+                        }
+                    ],
+                    "distance": 240,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Pier 1 (Middagh & Cranberry St)",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d165941735",
+                        "name": "Scenic Lookout",
+                        "pluralName": "Scenic Lookouts",
+                        "shortName": "Scenic Lookout",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/sceniclookout_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4b92e01bf964a5208b2334e3",
+                "name": "snake river lodge",
+                "location": {
+                    "lat": 40.698197,
+                    "lng": -73.996277,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.698197,
+                            "lng": -73.996277
+                        }
+                    ],
+                    "distance": 372,
+                    "cc": "US",
+                    "city": "Jackson hole",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Jackson hole, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4ad35d08f964a520fae320e3",
+                "name": "NY Waterway Ferry - Wall St/Pier 11 Terminal",
+                "location": {
+                    "address": "South St",
+                    "crossStreet": "at Gouverneur Ln",
+                    "lat": 40.70325299803113,
+                    "lng": -74.00609493255615,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70325299803113,
+                            "lng": -74.00609493255615
+                        }
+                    ],
+                    "distance": 629,
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "South St (at Gouverneur Ln)",
+                        "New York, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d12d951735",
+                        "name": "Boat or Ferry",
+                        "pluralName": "Boats or Ferries",
+                        "shortName": "Boat / Ferry",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/boat_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "5054eb43e4b04ed4f0dd1b30",
+                "name": "La cabana",
+                "location": {
+                    "lat": 40.69875,
+                    "lng": -73.99953,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69875,
+                            "lng": -73.99953
+                        }
+                    ],
+                    "distance": 144,
+                    "cc": "US",
+                    "state": "New York",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "New York",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d154941735",
+                        "name": "Cuban Restaurant",
+                        "pluralName": "Cuban Restaurants",
+                        "shortName": "Cuban",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cuban_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4c3a5ad83849c92880e0c2b1",
+                "name": "Blue Marble Ice Cream",
+                "location": {
+                    "address": "Brooklyn Bridge Park - Pier 1",
+                    "lat": 40.70283693041026,
+                    "lng": -73.99627425075094,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70283693041026,
+                            "lng": -73.99627425075094
+                        }
+                    ],
+                    "distance": 445,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn Bridge Park - Pier 1",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1c9941735",
+                        "name": "Ice Cream Shop",
+                        "pluralName": "Ice Cream Shops",
+                        "shortName": "Ice Cream",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/icecream_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4d9788e5daec224b4642333e",
+                "name": "Dr Shur",
+                "location": {
+                    "address": "140 Elgar Pl",
+                    "lat": 40.698978,
+                    "lng": -74.00043,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.698978,
+                            "lng": -74.00043
+                        }
+                    ],
+                    "distance": 119,
+                    "postalCode": "10475",
+                    "cc": "US",
+                    "city": "Bronx",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "140 Elgar Pl",
+                        "Bronx, NY 10475",
+                        "United States"
+                    ]
+                },
+                "categories": [],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4f603afae4b006673a95c90c",
+                "name": "Best Of New York",
+                "location": {
+                    "lat": 40.70219811621222,
+                    "lng": -74.00100292161058,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70219811621222,
+                            "lng": -74.00100292161058
+                        }
+                    ],
+                    "distance": 258,
+                    "cc": "US",
+                    "state": "New York",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "New York",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d146941735",
+                        "name": "Deli / Bodega",
+                        "pluralName": "Delis / Bodegas",
+                        "shortName": "Deli / Bodega",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "5aa18c1597cf5a1b3f933c29",
+                "name": "Clark Street Tunnel",
+                "location": {
+                    "crossStreet": "at East River",
+                    "lat": 40.700556,
+                    "lng": -74.003333,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.700556,
+                            "lng": -74.003333
+                        }
+                    ],
+                    "distance": 288,
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "at East River",
+                        "New York, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "52f2ab2ebcbc57f1066b8b4a",
+                        "name": "Tunnel",
+                        "pluralName": "Tunnels",
+                        "shortName": "Tunnel",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4c67633d8e9120a1d3ddda64",
+                "name": "Shroud Park",
+                "location": {
+                    "address": "Park Place",
+                    "crossStreet": "Washington",
+                    "lat": 40.7015,
+                    "lng": -73.99776681,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.7015,
+                            "lng": -73.99776681
+                        }
+                    ],
+                    "distance": 251,
+                    "postalCode": "11238",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Park Place (Washington)",
+                        "Brooklyn, NY 11238",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d163941735",
+                        "name": "Park",
+                        "pluralName": "Parks",
+                        "shortName": "Park",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4ce52312dfaef04d0a436c83",
+                "name": "Avon Walk for Breast Cancer NY Office",
+                "location": {
+                    "address": "110 Wall St",
+                    "lat": 40.69948154492081,
+                    "lng": -73.99704324157996,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69948154492081,
+                            "lng": -73.99704324157996
+                        }
+                    ],
+                    "distance": 256,
+                    "postalCode": "10005",
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "110 Wall St",
+                        "New York, NY 10005",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "50328a8e91d4c4b30a586d6c",
+                        "name": "Non-Profit",
+                        "pluralName": "Non-Profits",
+                        "shortName": "Non-Profit",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "51ec27ce498e6aba2b159f3a",
+                "name": "China Max",
+                "location": {
+                    "lat": 40.70149150976206,
+                    "lng": -73.99980928755299,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70149150976206,
+                            "lng": -73.99980928755299
+                        }
+                    ],
+                    "distance": 166,
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "New York, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d145941735",
+                        "name": "Chinese Restaurant",
+                        "pluralName": "Chinese Restaurants",
+                        "shortName": "Chinese",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "5b6f15f0419a9e00392c13c4",
+                "name": "The Infinity Mirrors Exhibit",
+                "location": {
+                    "lat": 40.697838,
+                    "lng": -73.99957,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.697838,
+                            "lng": -73.99957
+                        }
+                    ],
+                    "distance": 243,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d163941735",
+                        "name": "Park",
+                        "pluralName": "Parks",
+                        "shortName": "Park",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "58cdf02f2a1982041460ccf4",
+                "name": "Citibike - Pier 2 Brooklyn Bridge Park",
+                "location": {
+                    "lat": 40.69856,
+                    "lng": -73.997233,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69856,
+                            "lng": -73.997233
+                        }
+                    ],
+                    "distance": 283,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "New York, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4e4c9077bd41f78e849722f9",
+                        "name": "Bike Rental / Bike Share",
+                        "pluralName": "Bike Rentals / Bike Shares",
+                        "shortName": "Bike",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/bikeshop_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4ff764c3e4b01ead023da588",
+                "name": "Brooklyn Beach Shack",
+                "location": {
+                    "address": "334 Furman St",
+                    "crossStreet": "Brooklyn Bridge Park",
+                    "lat": 40.700051,
+                    "lng": -73.996479,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.700051,
+                            "lng": -73.996479
+                        }
+                    ],
+                    "distance": 297,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "334 Furman St (Brooklyn Bridge Park)",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d16c941735",
+                        "name": "Burger Joint",
+                        "pluralName": "Burger Joints",
+                        "shortName": "Burgers",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "venuePage": {
+                    "id": "33421350"
+                },
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "5d449fbe046acf0008e41de8",
+                "name": "Brooklyn Ice Cream Factory Truck",
+                "location": {
+                    "lat": 40.70058716708816,
+                    "lng": -73.99683664733202,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70058716708816,
+                            "lng": -73.99683664733202
+                        }
+                    ],
+                    "distance": 274,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "New York, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1cb941735",
+                        "name": "Food Truck",
+                        "pluralName": "Food Trucks",
+                        "shortName": "Food Truck",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/streetfood_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4bf0066151f2c9b6c917f192",
+                "name": "Granite Prospect",
+                "location": {
+                    "address": "Brooklyn Bridge Park",
+                    "lat": 40.70201821191993,
+                    "lng": -73.99747181402067,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70201821191993,
+                            "lng": -73.99747181402067
+                        }
+                    ],
+                    "distance": 309,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn Bridge Park",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d165941735",
+                        "name": "Scenic Lookout",
+                        "pluralName": "Scenic Lookouts",
+                        "shortName": "Scenic Lookout",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/sceniclookout_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4e1e2225ae60ef672d8572d0",
+                "name": "Metropolitan Opera In The Park",
+                "location": {
+                    "address": "Brooklyn Bridge Park",
+                    "lat": 40.70178034485588,
+                    "lng": -73.99748149848693,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70178034485588,
+                            "lng": -73.99748149848693
+                        }
+                    ],
+                    "distance": 290,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "New York",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn Bridge Park",
+                        "New York, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "5032792091d4c4b30a586d5c",
+                        "name": "Concert Hall",
+                        "pluralName": "Concert Halls",
+                        "shortName": "Concert Hall",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4e430e24483b13c708de1740",
+                "name": "Blaylock Consulting Group",
+                "location": {
+                    "lat": 40.7026078,
+                    "lng": -73.9998494,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.7026078,
+                            "lng": -73.9998494
+                        }
+                    ],
+                    "distance": 290,
+                    "cc": "US",
+                    "state": "New York",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "New York",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d127941735",
+                        "name": "Conference Room",
+                        "pluralName": "Conference Rooms",
+                        "shortName": "Conference room",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/office_conferenceroom_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4b7c8bedf964a5202c9a2fe3",
+                "name": "160 Columbia Heights",
+                "location": {
+                    "address": "160 Columbia Hts",
+                    "lat": 40.69822184225379,
+                    "lng": -73.99635251290523,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69822184225379,
+                            "lng": -73.99635251290523
+                        }
+                    ],
+                    "distance": 365,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "160 Columbia Hts",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4d954b06a243a5684965b473",
+                        "name": "Residential Building (Apartment / Condo)",
+                        "pluralName": "Residential Buildings (Apartments / Condos)",
+                        "shortName": "Residential",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/apartment_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "5295dc7f11d2d6647ee2a8a6",
+                "name": "Turner Construction Site: Pier 2",
+                "location": {
+                    "lat": 40.69954,
+                    "lng": -73.997108,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69954,
+                            "lng": -73.997108
+                        }
+                    ],
+                    "distance": 249,
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d163941735",
+                        "name": "Park",
+                        "pluralName": "Parks",
+                        "shortName": "Park",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "51d9fe5f498ef1b3afa23174",
+                "name": "Lizzmonade Brooklyn Pop Up Pool",
+                "location": {
+                    "address": "334 Furman St. Pier 2, Brooklyn Bridge Park",
+                    "crossStreet": "at Brooklyn Bridge Pk Greenway",
+                    "lat": 40.69991877987973,
+                    "lng": -73.99660212691505,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.69991877987973,
+                            "lng": -73.99660212691505
+                        }
+                    ],
+                    "distance": 286,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "334 Furman St. Pier 2, Brooklyn Bridge Park (at Brooklyn Bridge Pk Greenway)",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d112941735",
+                        "name": "Juice Bar",
+                        "pluralName": "Juice Bars",
+                        "shortName": "Juice Bar",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/juicebar_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "505dd2ffe4b023e440108ad5",
+                "name": "Yoga Park",
+                "location": {
+                    "address": "Brooklyn Bridge Park",
+                    "lat": 40.70166811321965,
+                    "lng": -73.997410519693,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70166811321965,
+                            "lng": -73.997410519693
+                        }
+                    ],
+                    "distance": 286,
+                    "postalCode": "11201",
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Brooklyn Bridge Park",
+                        "Brooklyn, NY 11201",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1f1931735",
+                        "name": "General Entertainment",
+                        "pluralName": "General Entertainment",
+                        "shortName": "Entertainment",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4dcc605afa76e2535b237f50",
+                "name": "Celebrate Brooklyn - Pier 1",
+                "location": {
+                    "address": "Pier 1",
+                    "lat": 40.70160798282341,
+                    "lng": -73.99729870300504,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.70160798282341,
+                            "lng": -73.99729870300504
+                        }
+                    ],
+                    "distance": 289,
+                    "cc": "US",
+                    "city": "Brooklyn",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Pier 1",
+                        "Brooklyn, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1e5931735",
+                        "name": "Music Venue",
+                        "pluralName": "Music Venues",
+                        "shortName": "Music Venue",
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            },
+            {
+                "id": "4d29ff9055a8b60c949fdbc0",
+                "name": "Tok Stok",
+                "location": {
+                    "address": "Barra da Tijuca",
+                    "lat": 40.7025558,
+                    "lng": -73.997896,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 40.7025558,
+                            "lng": -73.997896
+                        }
+                    ],
+                    "distance": 335,
+                    "cc": "US",
+                    "city": "Rio de Janeiro",
+                    "state": "NY",
+                    "country": "United States",
+                    "formattedAddress": [
+                        "Barra da Tijuca",
+                        "Rio de Janeiro, NY",
+                        "United States"
+                    ]
+                },
+                "categories": [],
+                "referralId": "v-1572896320",
+                "hasPerk": false
+            }
+        ],
+        "confident": false
+    }
+}

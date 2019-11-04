@@ -18,6 +18,7 @@
 		A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125F82370BA0400537CD9 /* NetworkManager.swift */; };
 		A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125FA2370BAAF00537CD9 /* ErrorHandler.swift */; };
 		A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */; };
+		A5D125FF2370C76300537CD9 /* Venues.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D125FE2370C76300537CD9 /* Venues.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A5D125F82370BA0400537CD9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A5D125FA2370BAAF00537CD9 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIClient.swift; sourceTree = "<group>"; };
+		A5D125FE2370C76300537CD9 /* Venues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Venues.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				A5D125E62370B18800537CD9 /* FQ_Map_ProjectTests.swift */,
 				A5D125E82370B18800537CD9 /* Info.plist */,
+				A5D125FE2370C76300537CD9 /* Venues.json */,
 			);
 			path = "FQ-Map-ProjectTests";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D125FF2370C76300537CD9 /* Venues.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,28 @@ class FQ_Map_ProjectTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    
+    // MARK: - Private Methods
+    private func getVenueDataFromJSON() -> Data? {
+        let testBundle = Bundle(for: type(of: self))
+        guard let pathToData = testBundle.path(forResource: "Venues", ofType: "json") else {
+            XCTFail("Couldn't find JSON")
+            return nil
+        }
+        let url = URL(fileURLWithPath: pathToData)
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch let jsonError {
+            fatalError("Couldn't find data in json file: \(jsonError)")
+        }
 
+ }
+    
+    // MARK: - Unit Tests
+    func testLoadVenues() {
+        let data = getVenueDataFromJSON() ?? Data()
+        let venues = Welcome.decodeVenues(from: data) ?? []
+        XCTAssertTrue(venues.count > 0, "No venues were loaded")
+    }
+    
 }
