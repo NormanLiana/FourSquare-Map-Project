@@ -15,6 +15,7 @@
 		A5D125E72370B18800537CD9 /* FQ_Map_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125E62370B18800537CD9 /* FQ_Map_ProjectTests.swift */; };
 		A5D125F32370B34500537CD9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125F22370B34500537CD9 /* Secrets.swift */; };
 		A5D125F62370B67600537CD9 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125F52370B67600537CD9 /* VenueModel.swift */; };
+		A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125F82370BA0400537CD9 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A5D125E82370B18800537CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D125F22370B34500537CD9 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		A5D125F52370B67600537CD9 /* VenueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
+		A5D125F82370BA0400537CD9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		A5D125CE2370B18100537CD9 /* FQ-Map-Project */ = {
 			isa = PBXGroup;
 			children = (
+				A5D125F72370B9A600537CD9 /* Networking */,
 				A5D125F42370B5F900537CD9 /* Models */,
 				A5D125F12370B2CD00537CD9 /* Confidential */,
 				A5D125CF2370B18100537CD9 /* AppDelegate.swift */,
@@ -116,6 +119,14 @@
 				A5D125F52370B67600537CD9 /* VenueModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A5D125F72370B9A600537CD9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A5D125F82370BA0400537CD9 /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */,
 				A5D125D42370B18100537CD9 /* ViewController.swift in Sources */,
 				A5D125F32370B34500537CD9 /* Secrets.swift in Sources */,
 				A5D125F62370B67600537CD9 /* VenueModel.swift in Sources */,
