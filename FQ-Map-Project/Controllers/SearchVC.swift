@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class SearchVC: UIViewController {
     
@@ -24,6 +26,11 @@ class SearchVC: UIViewController {
         sb.placeholder = "Search location"
         return sb
     }()
+    
+    lazy var mapView: MKMapView = {
+        let mv = MKMapView()
+        return mv
+    }()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -32,12 +39,14 @@ class SearchVC: UIViewController {
         setUpVCViews()
         constrainVenueSearchBar()
         constrainLocationSearchBar()
+        constrainMapView()
     }
     
     // MARK: - Private Methods
     private func addSubviews() {
         view.addSubview(venueSearchBar)
         view.addSubview(locationSearchBar)
+        view.addSubview(mapView)
     }
     
     private func setUpVCViews() {
@@ -56,5 +65,11 @@ class SearchVC: UIViewController {
         locationSearchBar.translatesAutoresizingMaskIntoConstraints = false
         
         [locationSearchBar.topAnchor.constraint(equalTo: venueSearchBar.bottomAnchor), locationSearchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor), locationSearchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor), locationSearchBar.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.075)].forEach({$0.isActive = true})
+    }
+    
+    private func constrainMapView() {
+        mapView.translatesAutoresizingMaskIntoConstraints = false
+        
+        [mapView.topAnchor.constraint(equalTo: locationSearchBar.bottomAnchor), mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor), mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor), mapView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
     }
 }
