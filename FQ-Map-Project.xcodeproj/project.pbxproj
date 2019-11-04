@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A5D125D02370B18100537CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125CF2370B18100537CD9 /* AppDelegate.swift */; };
 		A5D125D22370B18100537CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125D12370B18100537CD9 /* SceneDelegate.swift */; };
-		A5D125D42370B18100537CD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125D32370B18100537CD9 /* ViewController.swift */; };
 		A5D125D92370B18700537CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D125D82370B18700537CD9 /* Assets.xcassets */; };
 		A5D125DC2370B18700537CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D125DA2370B18700537CD9 /* LaunchScreen.storyboard */; };
 		A5D125E72370B18800537CD9 /* FQ_Map_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125E62370B18800537CD9 /* FQ_Map_ProjectTests.swift */; };
@@ -35,7 +34,6 @@
 		A5D125CC2370B18100537CD9 /* FQ-Map-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FQ-Map-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D125CF2370B18100537CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D125D12370B18100537CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5D125D32370B18100537CD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5D125D82370B18700537CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D125DB2370B18700537CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5D125DD2370B18700537CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				A5D125F12370B2CD00537CD9 /* Confidential */,
 				A5D125CF2370B18100537CD9 /* AppDelegate.swift */,
 				A5D125D12370B18100537CD9 /* SceneDelegate.swift */,
-				A5D125D32370B18100537CD9 /* ViewController.swift */,
 				A5D125D82370B18700537CD9 /* Assets.xcassets */,
 				A5D125DA2370B18700537CD9 /* LaunchScreen.storyboard */,
 				A5D125DD2370B18700537CD9 /* Info.plist */,
@@ -241,7 +238,6 @@
 			files = (
 				A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */,
 				A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */,
-				A5D125D42370B18100537CD9 /* ViewController.swift in Sources */,
 				A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */,
 				A5D125F32370B34500537CD9 /* Secrets.swift in Sources */,
 				A5D125F62370B67600537CD9 /* VenueModel.swift in Sources */,
