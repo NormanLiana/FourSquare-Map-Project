@@ -18,6 +18,8 @@
 		A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125FA2370BAAF00537CD9 /* ErrorHandler.swift */; };
 		A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */; };
 		A5D125FF2370C76300537CD9 /* Venues.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D125FE2370C76300537CD9 /* Venues.json */; };
+		A5D126032370D7F200537CD9 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D126022370D7F200537CD9 /* SearchVC.swift */; };
+		A5D126052370D83300537CD9 /* CollectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D126042370D83300537CD9 /* CollectionsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		A5D125FA2370BAAF00537CD9 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIClient.swift; sourceTree = "<group>"; };
 		A5D125FE2370C76300537CD9 /* Venues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Venues.json; sourceTree = "<group>"; };
+		A5D126022370D7F200537CD9 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		A5D126042370D83300537CD9 /* CollectionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,13 +91,11 @@
 		A5D125CE2370B18100537CD9 /* FQ-Map-Project */ = {
 			isa = PBXGroup;
 			children = (
+				A5D126012370D76500537CD9 /* Controllers */,
 				A5D125F72370B9A600537CD9 /* Networking */,
 				A5D125F42370B5F900537CD9 /* Models */,
 				A5D125F12370B2CD00537CD9 /* Confidential */,
-				A5D125CF2370B18100537CD9 /* AppDelegate.swift */,
-				A5D125D12370B18100537CD9 /* SceneDelegate.swift */,
-				A5D125D82370B18700537CD9 /* Assets.xcassets */,
-				A5D125DA2370B18700537CD9 /* LaunchScreen.storyboard */,
+				A5D126002370D6EA00537CD9 /* Supporting Files */,
 				A5D125DD2370B18700537CD9 /* Info.plist */,
 			);
 			path = "FQ-Map-Project";
@@ -133,6 +135,26 @@
 				A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		A5D126002370D6EA00537CD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5D125CF2370B18100537CD9 /* AppDelegate.swift */,
+				A5D125D12370B18100537CD9 /* SceneDelegate.swift */,
+				A5D125D82370B18700537CD9 /* Assets.xcassets */,
+				A5D125DA2370B18700537CD9 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5D126012370D76500537CD9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5D126022370D7F200537CD9 /* SearchVC.swift */,
+				A5D126042370D83300537CD9 /* CollectionsVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D126052370D83300537CD9 /* CollectionsVC.swift in Sources */,
+				A5D126032370D7F200537CD9 /* SearchVC.swift in Sources */,
 				A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */,
 				A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */,
 				A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */,
