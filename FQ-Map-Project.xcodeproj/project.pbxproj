@@ -17,6 +17,7 @@
 		A5D125F62370B67600537CD9 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125F52370B67600537CD9 /* VenueModel.swift */; };
 		A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125F82370BA0400537CD9 /* NetworkManager.swift */; };
 		A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125FA2370BAAF00537CD9 /* ErrorHandler.swift */; };
+		A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A5D125F52370B67600537CD9 /* VenueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
 		A5D125F82370BA0400537CD9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A5D125FA2370BAAF00537CD9 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				A5D125F82370BA0400537CD9 /* NetworkManager.swift */,
 				A5D125FA2370BAAF00537CD9 /* ErrorHandler.swift */,
+				A5D125FC2370BB9C00537CD9 /* VenueAPIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */,
 				A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */,
 				A5D125D42370B18100537CD9 /* ViewController.swift in Sources */,
+				A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */,
 				A5D125F32370B34500537CD9 /* Secrets.swift in Sources */,
 				A5D125F62370B67600537CD9 /* VenueModel.swift in Sources */,
 				A5D125D02370B18100537CD9 /* AppDelegate.swift in Sources */,
