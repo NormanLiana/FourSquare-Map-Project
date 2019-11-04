@@ -14,6 +14,7 @@
 		A5D125D92370B18700537CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D125D82370B18700537CD9 /* Assets.xcassets */; };
 		A5D125DC2370B18700537CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D125DA2370B18700537CD9 /* LaunchScreen.storyboard */; };
 		A5D125E72370B18800537CD9 /* FQ_Map_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125E62370B18800537CD9 /* FQ_Map_ProjectTests.swift */; };
+		A5D125F32370B34500537CD9 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125F22370B34500537CD9 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A5D125E22370B18800537CD9 /* FQ-Map-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FQ-Map-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D125E62370B18800537CD9 /* FQ_Map_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FQ_Map_ProjectTests.swift; sourceTree = "<group>"; };
 		A5D125E82370B18800537CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D125F22370B34500537CD9 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A5D125CE2370B18100537CD9 /* FQ-Map-Project */ = {
 			isa = PBXGroup;
 			children = (
+				A5D125F12370B2CD00537CD9 /* Confidential */,
 				A5D125CF2370B18100537CD9 /* AppDelegate.swift */,
 				A5D125D12370B18100537CD9 /* SceneDelegate.swift */,
 				A5D125D32370B18100537CD9 /* ViewController.swift */,
@@ -97,6 +100,14 @@
 				A5D125E82370B18800537CD9 /* Info.plist */,
 			);
 			path = "FQ-Map-ProjectTests";
+			sourceTree = "<group>";
+		};
+		A5D125F12370B2CD00537CD9 /* Confidential */ = {
+			isa = PBXGroup;
+			children = (
+				A5D125F22370B34500537CD9 /* Secrets.swift */,
+			);
+			path = Confidential;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D125D42370B18100537CD9 /* ViewController.swift in Sources */,
+				A5D125F32370B34500537CD9 /* Secrets.swift in Sources */,
 				A5D125D02370B18100537CD9 /* AppDelegate.swift in Sources */,
 				A5D125D22370B18100537CD9 /* SceneDelegate.swift in Sources */,
 			);
