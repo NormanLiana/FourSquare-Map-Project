@@ -79,6 +79,7 @@
 		A5D125CE2370B18100537CD9 /* FQ-Map-Project */ = {
 			isa = PBXGroup;
 			children = (
+				A5D125F42370B5F900537CD9 /* Models */,
 				A5D125F12370B2CD00537CD9 /* Confidential */,
 				A5D125CF2370B18100537CD9 /* AppDelegate.swift */,
 				A5D125D12370B18100537CD9 /* SceneDelegate.swift */,
@@ -105,6 +106,13 @@
 				A5D125F22370B34500537CD9 /* Secrets.swift */,
 			);
 			path = Confidential;
+			sourceTree = "<group>";
+		};
+		A5D125F42370B5F900537CD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
