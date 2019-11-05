@@ -23,4 +23,15 @@ class VenueImageCVCell: UICollectionViewCell {
         label.text = "Hello"
         return label
     }()
+    
+    // MARK: - Initializers
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        contentView.addSubview(venueImage)
+        contentView.addSubview(venueNameLabel)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
