@@ -31,6 +31,13 @@ class SearchVC: UIViewController {
         let mv = MKMapView()
         return mv
     }()
+    
+    lazy var venueImageCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        return cv
+    }()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
