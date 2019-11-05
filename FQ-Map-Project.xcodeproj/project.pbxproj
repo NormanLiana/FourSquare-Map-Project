@@ -91,6 +91,7 @@
 		A5D125CE2370B18100537CD9 /* FQ-Map-Project */ = {
 			isa = PBXGroup;
 			children = (
+				A5D1263423723A7800537CD9 /* Views */,
 				A5D126012370D76500537CD9 /* Controllers */,
 				A5D125F72370B9A600537CD9 /* Networking */,
 				A5D125F42370B5F900537CD9 /* Models */,
@@ -155,6 +156,13 @@
 				A5D126042370D83300537CD9 /* CollectionsVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A5D1263423723A7800537CD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
