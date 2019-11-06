@@ -36,12 +36,15 @@ class SearchVC: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.backgroundColor = .clear
+        cv.register(VenueImageCVCell.self, forCellWithReuseIdentifier: "VenueImageCVCell")
         return cv
     }()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegation()
         addSubviews()
         setUpVCViews()
         constrainVenueSearchBar()
@@ -61,6 +64,11 @@ class SearchVC: UIViewController {
     private func setUpVCViews() {
         navigationController?.isNavigationBarHidden = true
         view.backgroundColor = .white
+    }
+    
+    private func delegation() {
+        venueImageCollectionView.dataSource = self
+        venueImageCollectionView.delegate = self
     }
     
     // MARK: - Constraint Methods
@@ -86,5 +94,28 @@ class SearchVC: UIViewController {
         venueImageCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         [venueImageCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -35), venueImageCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor), venueImageCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor), venueImageCollectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.125)].forEach({$0.isActive = true})
+    }
+}
+
+// MARK: - Extensions
+extension SearchVC: UICollectionViewDelegate {}
+
+extension SearchVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = venueImageCollectionView.dequeueReusableCell(withReuseIdentifier: "VenueImageCVCell", for: indexPath) as? VenueImageCVCell {
+            cell.backgroundColor = .red
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+}
+
+extension SearchVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
     }
 }
