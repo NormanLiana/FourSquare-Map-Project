@@ -21,6 +21,10 @@ class VenueImageCVCell: UICollectionViewCell {
         let label = UILabel()
         label.textColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
         label.text = "Hello"
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.backgroundColor = .clear
+        label.adjustsFontSizeToFitWidth = true
         return label
     }()
     
@@ -48,6 +52,6 @@ class VenueImageCVCell: UICollectionViewCell {
     private func constrainVenueLabel() {
         venueNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        [venueNameLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.95), venueNameLabel.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.3), venueNameLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor), venueNameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)].forEach({$0.isActive = true})
+        [venueNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor), venueNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor), venueNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor), venueNameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)].forEach({$0.isActive = true})
     }
 }
