@@ -29,9 +29,25 @@ class VenueImageCVCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.addSubview(venueImage)
         contentView.addSubview(venueNameLabel)
+        constrainVenueImage()
+        constrainVenueLabel()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Contraint Methods
+    private func constrainVenueImage() {
+        venueImage.translatesAutoresizingMaskIntoConstraints = false
+        
+        [venueImage.topAnchor.constraint(equalTo: contentView.topAnchor), venueImage.leadingAnchor.constraint(equalTo: leadingAnchor), venueImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor), venueImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)].forEach({$0.isActive = true})
+    }
+    
+    private func constrainVenueLabel() {
+        venueNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        [venueNameLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.95), venueNameLabel.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 0.3), venueNameLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor), venueNameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)].forEach({$0.isActive = true})
     }
 }
