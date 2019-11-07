@@ -9,10 +9,19 @@
 import UIKit
 
 class CollectionsVC: UIViewController {
+    
+    // MARK: UI Objects
+    lazy var listVenueTableView: UITableView = {
+        let tv = UITableView()
+        tv.backgroundColor = .white
+        // MARK: - TODO register cell
+        return tv
+    }()
 
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
 
