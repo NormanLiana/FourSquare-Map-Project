@@ -21,6 +21,7 @@
 		A5D126032370D7F200537CD9 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D126022370D7F200537CD9 /* SearchVC.swift */; };
 		A5D126052370D83300537CD9 /* CollectionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D126042370D83300537CD9 /* CollectionsVC.swift */; };
 		A5D1263623723AE800537CD9 /* VenueImageCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D1263523723AE800537CD9 /* VenueImageCVCell.swift */; };
+		A5D126782374CC1A00537CD9 /* CollectionsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D126772374CC1A00537CD9 /* CollectionsCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A5D126022370D7F200537CD9 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		A5D126042370D83300537CD9 /* CollectionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsVC.swift; sourceTree = "<group>"; };
 		A5D1263523723AE800537CD9 /* VenueImageCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueImageCVCell.swift; sourceTree = "<group>"; };
+		A5D126772374CC1A00537CD9 /* CollectionsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D1263523723AE800537CD9 /* VenueImageCVCell.swift */,
+				A5D126772374CC1A00537CD9 /* CollectionsCVCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				A5D1263623723AE800537CD9 /* VenueImageCVCell.swift in Sources */,
 				A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */,
 				A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */,
+				A5D126782374CC1A00537CD9 /* CollectionsCVCell.swift in Sources */,
 				A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */,
 				A5D125F32370B34500537CD9 /* Secrets.swift in Sources */,
 				A5D125F62370B67600537CD9 /* VenueModel.swift in Sources */,
