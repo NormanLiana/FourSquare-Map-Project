@@ -14,7 +14,7 @@ class CollectionsVC: UIViewController {
     lazy var collectionsCV: UICollectionView = {
         let tv = UICollectionView()
         tv.backgroundColor = .white
-        // MARK: - TODO register cell
+        tv.register(CollectionsCVCell.self, forCellWithReuseIdentifier: "CollectionsCVCell")
         return tv
     }()
 
