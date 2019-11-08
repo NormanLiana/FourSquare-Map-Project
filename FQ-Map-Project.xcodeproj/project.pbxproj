@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53B7FE323760B9A007D46B4 /* VenueListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FE223760B9A007D46B4 /* VenueListVC.swift */; };
 		A5D125D02370B18100537CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125CF2370B18100537CD9 /* AppDelegate.swift */; };
 		A5D125D22370B18100537CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125D12370B18100537CD9 /* SceneDelegate.swift */; };
 		A5D125D92370B18700537CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D125D82370B18700537CD9 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A53B7FE223760B9A007D46B4 /* VenueListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListVC.swift; sourceTree = "<group>"; };
 		A5D125CC2370B18100537CD9 /* FQ-Map-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FQ-Map-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D125CF2370B18100537CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D125D12370B18100537CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				A5D126022370D7F200537CD9 /* SearchVC.swift */,
 				A5D126042370D83300537CD9 /* CollectionsVC.swift */,
+				A53B7FE223760B9A007D46B4 /* VenueListVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53B7FE323760B9A007D46B4 /* VenueListVC.swift in Sources */,
 				A5D126052370D83300537CD9 /* CollectionsVC.swift in Sources */,
 				A5D126032370D7F200537CD9 /* SearchVC.swift in Sources */,
 				A5D1263623723AE800537CD9 /* VenueImageCVCell.swift in Sources */,
