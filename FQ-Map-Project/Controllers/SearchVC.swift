@@ -81,7 +81,7 @@ class SearchVC: UIViewController {
     private func constrainVenueSearchBar() {
         venueSearchBar.translatesAutoresizingMaskIntoConstraints = false
         
-        [venueSearchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), venueSearchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor), venueSearchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor), venueSearchBar.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.075)].forEach({$0.isActive = true})
+        [venueSearchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), venueSearchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor), venueSearchBar.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8), venueSearchBar.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.075)].forEach({$0.isActive = true})
     }
     
     private func constrainLocationSearchBar() {
