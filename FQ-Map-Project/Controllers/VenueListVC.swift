@@ -21,12 +21,18 @@ class VenueListVC: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpVCViews()
         addSubViews()
+        constrainTableView()
     }
     
     // MARK: - Private Methods
     private func addSubViews() {
         view.addSubview(venueTVList)
+    }
+    
+    private func setUpVCViews() {
+        view.backgroundColor = .white
     }
     
     // MARK: - Constriant Methods
