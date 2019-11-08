@@ -30,6 +30,8 @@ class SearchVC: UIViewController {
     lazy var venueListButton: UIButton = {
         let btn = UIButton()
         btn.setBackgroundImage(UIImage(systemName: "list.dash"), for: .normal)
+        btn.addTarget(self, action: #selector(listVenueButtonPressed), for: .touchUpInside)
+        btn.showsTouchWhenHighlighted = true
         return btn
     }()
     
@@ -58,6 +60,12 @@ class SearchVC: UIViewController {
         constrainMapView()
         constrainCollectionView()
         constrainListButton()
+    }
+    
+    // MARK: - Actions
+    @objc func listVenueButtonPressed() {
+        let venueListVC = VenueListVC()
+        self.navigationController?.pushViewController(venueListVC, animated: true)
     }
     
     // MARK: - Private Methods
