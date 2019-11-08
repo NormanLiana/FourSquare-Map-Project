@@ -57,6 +57,7 @@ class SearchVC: UIViewController {
         constrainLocationSearchBar()
         constrainMapView()
         constrainCollectionView()
+        constrainListButton()
     }
     
     // MARK: - Private Methods
@@ -65,6 +66,7 @@ class SearchVC: UIViewController {
         view.addSubview(locationSearchBar)
         view.addSubview(mapView)
         view.addSubview(venueImageCollectionView)
+        view.addSubview(venueListButton)
     }
     
     private func setUpVCViews() {
@@ -100,6 +102,12 @@ class SearchVC: UIViewController {
         venueImageCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         [venueImageCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -35), venueImageCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor), venueImageCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor), venueImageCollectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.125)].forEach({$0.isActive = true})
+    }
+    
+    private func constrainListButton() {
+        venueListButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        [venueListButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), venueListButton.widthAnchor.constraint(equalTo: venueListButton.heightAnchor), venueListButton.trailingAnchor.constraint(equalTo: view.trailingAnchor), venueListButton.heightAnchor.constraint(equalTo: venueSearchBar.heightAnchor)].forEach({$0.isActive = true})
     }
 }
 
