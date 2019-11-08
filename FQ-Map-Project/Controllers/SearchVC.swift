@@ -27,6 +27,12 @@ class SearchVC: UIViewController {
         return sb
     }()
     
+    lazy var venueListButton: UIButton = {
+        let btn = UIButton()
+        btn.setImage(UIImage(systemName: "list.dash"), for: .normal)
+        return btn
+    }()
+    
     lazy var mapView: MKMapView = {
         let mv = MKMapView()
         return mv
