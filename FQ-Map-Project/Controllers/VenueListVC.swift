@@ -9,6 +9,13 @@
 import UIKit
 
 class VenueListVC: UIViewController {
+    
+    // MARK: - UI Objects
+    lazy var venueTVList: UITableView = {
+       let tv = UITableView()
+        tv.backgroundColor = .white
+        return tv
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
