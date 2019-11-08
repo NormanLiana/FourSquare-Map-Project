@@ -29,7 +29,7 @@ class SearchVC: UIViewController {
     
     lazy var venueListButton: UIButton = {
         let btn = UIButton()
-        btn.setImage(UIImage(systemName: "list.dash"), for: .normal)
+        btn.setBackgroundImage(UIImage(systemName: "list.dash"), for: .normal)
         return btn
     }()
     
