@@ -14,6 +14,7 @@ class VenueListVC: UIViewController {
     lazy var venueTVList: UITableView = {
        let tv = UITableView()
         tv.backgroundColor = .white
+        tv.register(VenueListTVCell.self, forCellReuseIdentifier: "VenueListTVCell")
         return tv
     }()
 
@@ -36,4 +37,28 @@ class VenueListVC: UIViewController {
     }
     
 
+}
+
+// MARK: - Extensions
+extension VenueListVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = venueTVList.dequeueReusableCell(withIdentifier: "VenueListVC", for: indexPath) as? VenueListTVCell {
+            cell.backgroundColor = .yellow
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    
+}
+
+extension VenueListVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 }
