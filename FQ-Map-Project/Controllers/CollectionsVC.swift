@@ -12,15 +12,18 @@ class CollectionsVC: UIViewController {
     
     // MARK: UI Objects
     lazy var collectionsCV: UICollectionView = {
-        let tv = UICollectionView()
-        tv.backgroundColor = .white
-        tv.register(CollectionsCVCell.self, forCellWithReuseIdentifier: "CollectionsCVCell")
-        return tv
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.backgroundColor = .white
+        cv.register(CollectionsCVCell.self, forCellWithReuseIdentifier: "CollectionsCVCell")
+        return cv
     }()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegation()
         addSubViews()
         constrainTableView()
     }
@@ -28,6 +31,12 @@ class CollectionsVC: UIViewController {
     // MARK: - Private Methods
     private func addSubViews() {
         view.addSubview(collectionsCV)
+    }
+    
+    private func delegation() {
+        collectionsCV.dataSource = self
+        collectionsCV.delegate = self
+
     }
     
     // MARK: - Constraint Methods
@@ -39,3 +48,30 @@ class CollectionsVC: UIViewController {
     
 
 }
+
+// MARK: - Extensions
+extension CollectionsVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionsCV.dequeueReusableCell(withReuseIdentifier: "CollectionsCVCell", for: indexPath) as? CollectionsCVCell {
+            cell.backgroundColor = .red
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    
+}
+
+extension CollectionsVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 125, height: 125)
+    }
+}
+
+
+extension CollectionsVC: UICollectionViewDelegate {}
+
