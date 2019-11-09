@@ -21,6 +21,7 @@ class VenueListVC: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegation()
         setUpVCViews()
         addSubViews()
         constrainTableView()
@@ -29,6 +30,12 @@ class VenueListVC: UIViewController {
     // MARK: - Private Methods
     private func addSubViews() {
         view.addSubview(venueTVList)
+    }
+    
+    private func delegation() {
+        venueTVList.delegate = self
+        venueTVList.dataSource = self
+
     }
     
     private func setUpVCViews() {
@@ -53,7 +60,7 @@ extension VenueListVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = venueTVList.dequeueReusableCell(withIdentifier: "VenueListVC", for: indexPath) as? VenueListTVCell {
+        if let cell = venueTVList.dequeueReusableCell(withIdentifier: "VenueListTVCell", for: indexPath) as? VenueListTVCell {
             cell.backgroundColor = .yellow
             return cell
         }
