@@ -40,6 +40,7 @@ class VenueListVC: UIViewController {
     
     private func setUpVCViews() {
         view.backgroundColor = .white
+        navigationController?.isNavigationBarHidden = false
     }
     
     // MARK: - Constriant Methods
