@@ -19,18 +19,43 @@ class CollectionsVC: UIViewController {
         cv.register(CollectionsCVCell.self, forCellWithReuseIdentifier: "CollectionsCVCell")
         return cv
     }()
+    
+    lazy var navBar: UINavigationBar = {
+        let nb = UINavigationBar()
+        let navAppearance = nb.standardAppearance
+        return nb
+    }()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         delegation()
+        setUpVCViews()
+        setUpNavBarView()
         addSubViews()
+        contrainNavBar()
         constrainTableView()
     }
     
     // MARK: - Private Methods
     private func addSubViews() {
         view.addSubview(collectionsCV)
+        view.addSubview(navBar)
+    }
+    
+    private func setUpVCViews() {
+        view.backgroundColor = .white
+    }
+    
+    private func setUpNavBarView() {
+        let navItem = UINavigationItem()
+        let plusButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(plusButtonPressed))
+        navItem.rightBarButtonItem = plusButton
+        navBar.setItems([navItem], animated: false)
+    }
+    
+    @objc func plusButtonPressed() {
+        
     }
     
     private func delegation() {
@@ -40,10 +65,16 @@ class CollectionsVC: UIViewController {
     }
     
     // MARK: - Constraint Methods
+    private func contrainNavBar() {
+        navBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        [navBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), navBar.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor), navBar.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor), navBar.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.08)].forEach({$0.isActive = true})
+    }
+    
     private func constrainTableView() {
         collectionsCV.translatesAutoresizingMaskIntoConstraints = false
         
-        [collectionsCV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), collectionsCV.leadingAnchor.constraint(equalTo: view.leadingAnchor), collectionsCV.trailingAnchor.constraint(equalTo: view.trailingAnchor), collectionsCV.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
+        [collectionsCV.topAnchor.constraint(equalTo: navBar.bottomAnchor), collectionsCV.leadingAnchor.constraint(equalTo: view.leadingAnchor), collectionsCV.trailingAnchor.constraint(equalTo: view.trailingAnchor), collectionsCV.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
     }
     
 
