@@ -48,6 +48,9 @@ class SearchVC: UIViewController {
         cv.register(VenueImageCVCell.self, forCellWithReuseIdentifier: "VenueImageCVCell")
         return cv
     }()
+    
+    // MARK: - Properties
+    private let locationManager = CLLocationManager()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -60,6 +63,7 @@ class SearchVC: UIViewController {
         constrainMapView()
         constrainCollectionView()
         constrainListButton()
+        locationAuthorization()
     }
     
     // MARK: - Actions
@@ -85,6 +89,21 @@ class SearchVC: UIViewController {
     private func delegation() {
         venueImageCollectionView.dataSource = self
         venueImageCollectionView.delegate = self
+    }
+    
+    private func locationAuthorization() {
+        let status = CLLocationManager.authorizationStatus()
+        switch status {
+        case .authorizedAlways, .authorizedWhenInUse:
+            mapView.showsUserLocation = true
+            locationManager.requestLocation()
+            locationManager.startUpdatingLocation()
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        default:
+            locationManager.requestWhenInUseAuthorization()
+            
+            
+        }
     }
     
     // MARK: - Constraint Methods
