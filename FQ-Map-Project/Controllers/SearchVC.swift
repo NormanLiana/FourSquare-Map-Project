@@ -64,6 +64,7 @@ class SearchVC: UIViewController {
         constrainCollectionView()
         constrainListButton()
         locationAuthorization()
+        mapView.userTrackingMode = .follow
     }
     
     // MARK: - Actions
@@ -89,6 +90,9 @@ class SearchVC: UIViewController {
     private func delegation() {
         venueImageCollectionView.dataSource = self
         venueImageCollectionView.delegate = self
+        mapView.delegate = self
+        locationManager.delegate = self
+        
     }
     
     private func locationAuthorization() {
@@ -160,3 +164,29 @@ extension SearchVC: UICollectionViewDelegateFlowLayout {
         return CGSize(width: 100, height: 100)
     }
 }
+
+extension SearchVC: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("New location: \(locations)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        print("Authorization status changed to: \(status.rawValue)")
+        
+        switch status {
+        case .authorizedAlways, .authorizedWhenInUse:
+            locationManager.requestLocation()
+        default:
+            break
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error: \(error)")
+    }
+}
+
+extension SearchVC: MKMapViewDelegate {}
+
+
