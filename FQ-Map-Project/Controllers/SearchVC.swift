@@ -17,6 +17,7 @@ class SearchVC: UIViewController {
         let sb = UISearchBar()
         sb.backgroundColor = .white
         sb.placeholder = "Search Venue"
+        sb.tag = 0
         return sb
     }()
     
@@ -24,6 +25,7 @@ class SearchVC: UIViewController {
         let sb = UISearchBar()
         sb.backgroundColor = .white
         sb.placeholder = "Search location"
+        sb.tag = 1
         return sb
     }()
     
