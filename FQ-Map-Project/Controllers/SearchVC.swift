@@ -51,6 +51,15 @@ class SearchVC: UIViewController {
     
     // MARK: - Properties
     private let locationManager = CLLocationManager()
+    
+    private let initialLocation = CLLocation(latitude: 40.742054, longitude: -73.769417)
+    private let searchRadius = 2000
+    
+    private var venues = [Venue]() {
+        didSet {
+            addAndRemoveAnnotations(venues: venues)
+        }
+    }
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -107,6 +116,18 @@ class SearchVC: UIViewController {
             locationManager.requestWhenInUseAuthorization()
             
             
+        }
+    }
+    
+    private func addAndRemoveAnnotations(venues: [Venue]) {
+        // below will facilitate removing annotations
+        let annotations = mapView.annotations
+        mapView.removeAnnotations(annotations)
+        for venue in venues {
+            let newAnnotation = MKPointAnnotation()
+            newAnnotation.title = venue.name
+            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
+            mapView.addAnnotation(newAnnotation)
         }
     }
     
