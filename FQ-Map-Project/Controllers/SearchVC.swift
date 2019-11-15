@@ -135,7 +135,6 @@ class SearchVC: UIViewController {
     }
     
     private func addAndRemoveAnnotations(venues: [Venue]) {
-        // below will facilitate removing annotations
         let annotations = mapView.annotations
         mapView.removeAnnotations(annotations)
         for venue in venues {
