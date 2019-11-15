@@ -238,9 +238,6 @@ extension SearchVC: CLLocationManagerDelegate {
 extension SearchVC: MKMapViewDelegate {}
 
 extension SearchVC: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        venueSearchString = searchText
-    }
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         venueSearchBar.showsCancelButton = true
