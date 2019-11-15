@@ -125,6 +125,8 @@ class SearchVC: UIViewController {
             locationManager.requestLocation()
             locationManager.startUpdatingLocation()
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            let coordinateRegion = MKCoordinateRegion.init(center: locationManager.location?.coordinate ?? currentLocation, latitudinalMeters: self.searchRadius * 2.0, longitudinalMeters: self.searchRadius * 2.0)
+            self.mapView.setRegion(coordinateRegion, animated: true)
         default:
             locationManager.requestWhenInUseAuthorization()
             
