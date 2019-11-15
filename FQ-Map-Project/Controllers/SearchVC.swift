@@ -103,7 +103,8 @@ class SearchVC: UIViewController {
         venueImageCollectionView.delegate = self
         mapView.delegate = self
         locationManager.delegate = self
-        
+        venueSearchBar.delegate = self
+        locationSearchBar.delegate = self
     }
     
     private func locationAuthorization() {
