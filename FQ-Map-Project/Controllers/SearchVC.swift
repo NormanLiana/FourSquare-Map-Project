@@ -54,11 +54,22 @@ class SearchVC: UIViewController {
     // MARK: - Properties
     private let locationManager = CLLocationManager()
     
-    private let initialLocation = CLLocation(latitude: 40.742054, longitude: -73.769417)
-    private let searchRadius = 2000
+    private var currentLocation = CLLocationCoordinate2D(latitude: 40.742054, longitude: -73.769417) {
+        didSet {
+            self.loadVenueSearchData(lat: currentLocation.latitude, long: currentLocation.longitude, searchQuery: venueSearchString ?? "")
+        }
+    }
+    private let searchRadius: Double = 2000
     
     private var venues = [Venue]() {
         didSet {
+            addAndRemoveAnnotations(venues: venues)
+        }
+    }
+    
+    private var venueSearchString: String? = nil {
+        didSet {
+            loadVenueSearchData(lat: currentLocation.latitude, long: currentLocation.longitude, searchQuery: venueSearchString!)
             addAndRemoveAnnotations(venues: venues)
         }
     }
