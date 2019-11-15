@@ -59,18 +59,17 @@ class SearchVC: UIViewController {
             self.loadVenueSearchData(lat: currentLocation.latitude, long: currentLocation.longitude, searchQuery: venueSearchString ?? "")
         }
     }
-    private let searchRadius: Double = 2000
+    private let searchRadius: Double = 1000
     
     private var venues = [Venue]() {
         didSet {
-            addAndRemoveAnnotations(venues: venues)
+           addAndRemoveAnnotations(venues: venues)
         }
     }
     
     private var venueSearchString: String? = nil {
         didSet {
             loadVenueSearchData(lat: currentLocation.latitude, long: currentLocation.longitude, searchQuery: venueSearchString!)
-            addAndRemoveAnnotations(venues: venues)
         }
     }
 
