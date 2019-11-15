@@ -129,8 +129,21 @@ class SearchVC: UIViewController {
         for venue in venues {
             let newAnnotation = MKPointAnnotation()
             newAnnotation.title = venue.name
-            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: venue.location.lat, longitude: venue.location.lng)
+            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: venue.location?.lat ?? 40.742054, longitude: venue.location?.lng ?? -73.769417)
             mapView.addAnnotation(newAnnotation)
+        }
+    }
+    
+    private func loadVenueSearchData(lat: Double, long: Double, searchQuery: String) {
+        VenueAPIClient.shared.getVenues(lat: lat, long: long, searchQuery: searchQuery) { [weak self] (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    print(error)
+                case .success(let venuesFromOnline):
+                    self?.venues = venuesFromOnline
+                }
+            }
         }
     }
     
