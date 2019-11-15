@@ -212,4 +212,61 @@ extension SearchVC: CLLocationManagerDelegate {
 
 extension SearchVC: MKMapViewDelegate {}
 
-
+extension SearchVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        venueSearchString = searchText
+    }
+    
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        venueSearchBar.showsCancelButton = true
+        return true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        venueSearchBar.showsCancelButton = false
+        venueSearchBar.resignFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        switch searchBar.tag {
+        case 0:
+            guard searchBar.text != "" && searchBar.text != nil else { return }
+            venueSearchString = searchBar.text
+        case 1:
+            let activityIndicator = UIActivityIndicatorView()
+            activityIndicator.center = self.view.center
+            view.addSubview(activityIndicator)
+            
+            venueSearchBar.resignFirstResponder()
+            
+            let searchRequest = MKLocalSearch.Request()
+            searchRequest.naturalLanguageQuery = locationSearchBar.text
+            let activeSearch = MKLocalSearch(request: searchRequest)
+            
+            activeSearch.start { (response, error) in
+                activityIndicator.stopAnimating()
+                
+                if response == nil {
+                    print(error)
+                } else {
+                    let latitude = response?.boundingRegion.center.latitude
+                    let longitude = response?.boundingRegion.center.longitude
+                    
+                    let newAnnotation = MKPointAnnotation()
+                    newAnnotation.title = searchBar.text
+                    
+                    // Instead of force unwrapping lat and long, maybe show an alert that says that the map cannot find that location
+                    newAnnotation.coordinate = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
+                    self.mapView.addAnnotation(newAnnotation)
+                    
+                    let coordinateRegion = MKCoordinateRegion.init(center: newAnnotation.coordinate, latitudinalMeters: self.searchRadius * 2.0, longitudinalMeters: self.searchRadius * 2.0)
+                    self.mapView.setRegion(coordinateRegion, animated: true)
+                }
+            }
+        default:
+            print("This search bar does not exist")
+        }
+        
+    }
+}
