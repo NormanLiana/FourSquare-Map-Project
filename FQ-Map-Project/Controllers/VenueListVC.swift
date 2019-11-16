@@ -17,6 +17,9 @@ class VenueListVC: UIViewController {
         tv.register(VenueListTVCell.self, forCellReuseIdentifier: "VenueListTVCell")
         return tv
     }()
+    
+    // MARK: - Properties
+    var venuesList = [Venue]()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {

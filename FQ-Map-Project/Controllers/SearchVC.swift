@@ -91,6 +91,7 @@ class SearchVC: UIViewController {
     // MARK: - Actions
     @objc func listVenueButtonPressed() {
         let venueListVC = VenueListVC()
+        venueListVC.venuesList = venues
         self.navigationController?.pushViewController(venueListVC, animated: true)
     }
     
