@@ -60,12 +60,13 @@ class VenueListVC: UIViewController {
 extension VenueListVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return venuesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = venueTVList.dequeueReusableCell(withIdentifier: "VenueListTVCell", for: indexPath) as? VenueListTVCell {
-            cell.backgroundColor = .yellow
+            let venue = venuesList[indexPath.row]
+            cell.venueNameLabel.text = venue.name
             return cell
         }
         return UITableViewCell()
