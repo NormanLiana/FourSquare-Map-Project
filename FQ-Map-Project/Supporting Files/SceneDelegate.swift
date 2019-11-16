@@ -24,9 +24,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         collectionsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
         
-        let navController = UINavigationController(rootViewController: searchVC)
+        let navController1 = UINavigationController(rootViewController: searchVC)
+        let navController2 = UINavigationController(rootViewController: collectionsVC)
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [navController, collectionsVC]
+        tabBarController.viewControllers = [navController1, navController2]
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }
