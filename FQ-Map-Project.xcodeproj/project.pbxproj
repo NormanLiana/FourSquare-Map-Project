@@ -14,6 +14,7 @@
 		A53B7FFD237F99D4007D46B4 /* CreateCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FFC237F99D4007D46B4 /* CreateCollectionVC.swift */; };
 		A53B80002381953B007D46B4 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FFF2381953B007D46B4 /* PersistenceManager.swift */; };
 		A53B80022381974B007D46B4 /* CollectionPersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B80012381974B007D46B4 /* CollectionPersistenceHelper.swift */; };
+		A53B8004238198A4007D46B4 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8003238198A4007D46B4 /* CollectionModel.swift */; };
 		A5D125D02370B18100537CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125CF2370B18100537CD9 /* AppDelegate.swift */; };
 		A5D125D22370B18100537CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125D12370B18100537CD9 /* SceneDelegate.swift */; };
 		A5D125D92370B18700537CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D125D82370B18700537CD9 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		A53B7FFC237F99D4007D46B4 /* CreateCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionVC.swift; sourceTree = "<group>"; };
 		A53B7FFF2381953B007D46B4 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		A53B80012381974B007D46B4 /* CollectionPersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPersistenceHelper.swift; sourceTree = "<group>"; };
+		A53B8003238198A4007D46B4 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
 		A5D125CC2370B18100537CD9 /* FQ-Map-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FQ-Map-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D125CF2370B18100537CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D125D12370B18100537CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				A5D125F52370B67600537CD9 /* VenueModel.swift */,
 				A53B7FFA237F4ABD007D46B4 /* VenueImageModel.swift */,
+				A53B8003238198A4007D46B4 /* CollectionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				A53B7FE323760B9A007D46B4 /* VenueListVC.swift in Sources */,
 				A5D126052370D83300537CD9 /* CollectionsVC.swift in Sources */,
 				A5D126032370D7F200537CD9 /* SearchVC.swift in Sources */,
+				A53B8004238198A4007D46B4 /* CollectionModel.swift in Sources */,
 				A53B7FFB237F4ABD007D46B4 /* VenueImageModel.swift in Sources */,
 				A5D1263623723AE800537CD9 /* VenueImageCVCell.swift in Sources */,
 				A53B80022381974B007D46B4 /* CollectionPersistenceHelper.swift in Sources */,
