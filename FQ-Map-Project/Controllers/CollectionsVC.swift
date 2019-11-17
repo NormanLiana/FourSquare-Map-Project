@@ -24,6 +24,13 @@ class CollectionsVC: UIViewController {
         let butt = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(plusButtonPressed))
        return butt
     }()
+    
+    // MARK: - Properties
+    var collections = [Collection]() {
+        didSet {
+            collectionsCV.reloadData()
+        }
+    }
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -33,6 +40,10 @@ class CollectionsVC: UIViewController {
         setUpNavBarView()
         addSubViews()
         constrainTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loadCollections()
     }
     
     // MARK: - Private Methods
@@ -45,7 +56,7 @@ class CollectionsVC: UIViewController {
     }
     
     private func setUpNavBarView() {
-        self.navigationItem.rightBarButtonItem = createCollectionButton
+        navigationItem.rightBarButtonItem = createCollectionButton
     }
     
     @objc func plusButtonPressed() {
@@ -56,7 +67,15 @@ class CollectionsVC: UIViewController {
     private func delegation() {
         collectionsCV.dataSource = self
         collectionsCV.delegate = self
-
+    }
+    
+    private func loadCollections() {
+        do {
+            let allCollections = try CollectionPersistenceHelper.standard.getCollections()
+            collections = allCollections
+        } catch {
+            print(error)
+        }
     }
     
     // MARK: - Constraint Methods
@@ -72,12 +91,13 @@ class CollectionsVC: UIViewController {
 // MARK: - Extensions
 extension CollectionsVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return collections.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionsCV.dequeueReusableCell(withReuseIdentifier: "CollectionsCVCell", for: indexPath) as? CollectionsCVCell {
-            cell.backgroundColor = .red
+            let collection = collections[indexPath.row]
+            cell.collectionNameLabel.text = collection.name
             return cell
         }
         return UICollectionViewCell()
