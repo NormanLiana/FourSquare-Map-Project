@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct Collection: Codable {
+    let name: String
+    let venues: [Venue]
+}
