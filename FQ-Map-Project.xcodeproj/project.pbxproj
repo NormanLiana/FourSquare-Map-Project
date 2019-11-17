@@ -12,7 +12,7 @@
 		A53B7FF9237F4551007D46B4 /* VenueImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FF8237F4551007D46B4 /* VenueImageAPIClient.swift */; };
 		A53B7FFB237F4ABD007D46B4 /* VenueImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FFA237F4ABD007D46B4 /* VenueImageModel.swift */; };
 		A53B7FFD237F99D4007D46B4 /* CreateCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FFC237F99D4007D46B4 /* CreateCollectionVC.swift */; };
-		A53B80002381953B007D46B4 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FFF2381953B007D46B4 /* PersistenceHelper.swift */; };
+		A53B80002381953B007D46B4 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B7FFF2381953B007D46B4 /* PersistenceManager.swift */; };
 		A5D125D02370B18100537CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125CF2370B18100537CD9 /* AppDelegate.swift */; };
 		A5D125D22370B18100537CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125D12370B18100537CD9 /* SceneDelegate.swift */; };
 		A5D125D92370B18700537CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D125D82370B18700537CD9 /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 		A53B7FF8237F4551007D46B4 /* VenueImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueImageAPIClient.swift; sourceTree = "<group>"; };
 		A53B7FFA237F4ABD007D46B4 /* VenueImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueImageModel.swift; sourceTree = "<group>"; };
 		A53B7FFC237F99D4007D46B4 /* CreateCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionVC.swift; sourceTree = "<group>"; };
-		A53B7FFF2381953B007D46B4 /* PersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
+		A53B7FFF2381953B007D46B4 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		A5D125CC2370B18100537CD9 /* FQ-Map-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FQ-Map-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D125CF2370B18100537CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D125D12370B18100537CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		A53B7FFE23819508007D46B4 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				A53B7FFF2381953B007D46B4 /* PersistenceHelper.swift */,
+				A53B7FFF2381953B007D46B4 /* PersistenceManager.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				A5D1263623723AE800537CD9 /* VenueImageCVCell.swift in Sources */,
 				A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */,
 				A5D125FB2370BAAF00537CD9 /* ErrorHandler.swift in Sources */,
-				A53B80002381953B007D46B4 /* PersistenceHelper.swift in Sources */,
+				A53B80002381953B007D46B4 /* PersistenceManager.swift in Sources */,
 				A5D126782374CC1A00537CD9 /* CollectionsCVCell.swift in Sources */,
 				A53B7FE52376199F007D46B4 /* VenueListTVCell.swift in Sources */,
 				A5D125FD2370BB9C00537CD9 /* VenueAPIClient.swift in Sources */,
