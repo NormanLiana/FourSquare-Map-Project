@@ -26,6 +26,9 @@ class VenueDVC: UIViewController {
         label.font = label.font.withSize(30)
         return label
     }()
+    
+    // MARK: - Properties
+    var selectedVenue: Venue!
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -33,12 +36,23 @@ class VenueDVC: UIViewController {
         addSubViews()
         constrainNameLabel()
         constrainImage()
+        setUpViews()
+        setUpVCViews()
     }
     
     // MARK: - Private Methods
+    private func setUpVCViews() {
+        view.backgroundColor = .white
+        navigationController?.isToolbarHidden = false
+    }
+    
     private func addSubViews() {
         view.addSubview(venueImage)
         view.addSubview(venueNameLabel)
+    }
+    
+    private func setUpViews() {
+        venueNameLabel.text = selectedVenue.name
     }
     
     // MARK: - Contraint Methods
