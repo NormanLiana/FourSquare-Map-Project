@@ -72,12 +72,15 @@ class SearchVC: UIViewController {
             loadVenueSearchData(lat: currentLocation.latitude, long: currentLocation.longitude, searchQuery: venueSearchString!)
         }
     }
+    
+    private var selectedVenueAnnotation: Venue?
+    
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         delegation()
-        addSubviews()
+        addSubViews()
         setUpVCViews()
         constrainVenueSearchBar()
         constrainLocationSearchBar()
@@ -88,15 +91,21 @@ class SearchVC: UIViewController {
         mapView.userTrackingMode = .follow
     }
     
-    // MARK: - Actions
+    // MARK: - Objc Actions
     @objc func listVenueButtonPressed() {
         let venueListVC = VenueListVC()
         venueListVC.venuesList = venues
         self.navigationController?.pushViewController(venueListVC, animated: true)
     }
     
+    @objc func sendDataToDVC() {
+        let detailVC = VenueDVC()
+        detailVC.selectedVenue = selectedVenueAnnotation
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
     // MARK: - Private Methods
-    private func addSubviews() {
+    private func addSubViews() {
         view.addSubview(venueSearchBar)
         view.addSubview(locationSearchBar)
         view.addSubview(mapView)
@@ -236,7 +245,17 @@ extension SearchVC: CLLocationManagerDelegate {
     }
 }
 
-extension SearchVC: MKMapViewDelegate {}
+extension SearchVC: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        let selectedAnnotation = UIButton(type: .detailDisclosure)
+        view.detailCalloutAccessoryView = selectedAnnotation
+        selectedAnnotation.addTarget(self, action: #selector(sendDataToDVC), for: .touchUpInside)
+        let  selected = self.venues.filter({$0.name == view.annotation?.title})
+        selectedVenueAnnotation = selected.first
+    }
+    
+}
 
 extension SearchVC: UISearchBarDelegate {
     
