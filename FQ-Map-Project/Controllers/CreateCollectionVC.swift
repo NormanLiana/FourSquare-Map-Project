@@ -19,13 +19,25 @@ class CreateCollectionVC: UIViewController {
         tf.placeholder = "Enter new collection title"
         return tf
     }()
+    
+    lazy var createButton: UIBarButtonItem = {
+        let butt = UIBarButtonItem(title: "Create", style: UIBarButtonItem.Style.plain, target: self, action: #selector(createButtonPressed))
+        return butt
+    }()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpVCViews()
+        setUpnavBarViews()
         addSubViews()
         constrainTextField()
+    }
+    
+    // MARK: - Objc Actions
+    @objc func createButtonPressed() {
+        createNewCollection()
+        navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Private Methods
@@ -35,6 +47,21 @@ class CreateCollectionVC: UIViewController {
     
     private func addSubViews() {
         view.addSubview(collectionNameTextField)
+    }
+    
+    private func setUpnavBarViews() {
+        navigationItem.rightBarButtonItem = createButton
+    }
+    
+    private func createNewCollection() {
+        guard let name = collectionNameTextField.text else {return}
+        
+        do {
+           let newCollection = Collection(name: name, venues: nil)
+            try CollectionPersistenceHelper.standard.saveCollection(newCollection: newCollection)
+        } catch {
+            print(error)
+        }
     }
     
     // MARK: - Constraint Methods
