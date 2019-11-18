@@ -24,6 +24,15 @@ class CreateCollectionVC: UIViewController {
         let butt = UIBarButtonItem(title: "Create", style: UIBarButtonItem.Style.plain, target: self, action: #selector(createButtonPressed))
         return butt
     }()
+    
+    lazy var collectionsCV: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.backgroundColor = .white
+        cv.register(CollectionsCVCell.self, forCellWithReuseIdentifier: "CollectionsCVCell")
+        return cv
+    }()
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -32,6 +41,7 @@ class CreateCollectionVC: UIViewController {
         setUpnavBarViews()
         addSubViews()
         constrainTextField()
+        constrainCollectionView()
     }
     
     // MARK: - Objc Actions
@@ -71,5 +81,10 @@ class CreateCollectionVC: UIViewController {
         [collectionNameTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor), collectionNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor), collectionNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor), collectionNameTextField.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1)].forEach({$0.isActive = true})
     }
     
-
+    private func constrainCollectionView() {
+        collectionsCV.translatesAutoresizingMaskIntoConstraints = false
+        
+        [collectionsCV.topAnchor.constraint(equalTo: collectionNameTextField.bottomAnchor), collectionsCV.leadingAnchor.constraint(equalTo: view.leadingAnchor), collectionsCV.trailingAnchor.constraint(equalTo: view.trailingAnchor), collectionsCV.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
+    }
 }
+
