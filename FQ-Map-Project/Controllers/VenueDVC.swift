@@ -53,7 +53,7 @@ class VenueDVC: UIViewController {
     // MARK: - Private Methods
     private func setUpVCViews() {
         view.backgroundColor = .white
-        navigationController?.isToolbarHidden = false
+        navigationController?.isNavigationBarHidden = false
         navigationItem.rightBarButtonItem = addVenueButton
     }
     
