@@ -16,6 +16,7 @@
 		A53B80022381974B007D46B4 /* CollectionPersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B80012381974B007D46B4 /* CollectionPersistenceHelper.swift */; };
 		A53B8004238198A4007D46B4 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8003238198A4007D46B4 /* CollectionModel.swift */; };
 		A53B80082381CB33007D46B4 /* VenueDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B80072381CB33007D46B4 /* VenueDVC.swift */; };
+		A54784BC2382483700FB3306 /* CreateCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54784BB2382483700FB3306 /* CreateCVCell.swift */; };
 		A5D125D02370B18100537CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125CF2370B18100537CD9 /* AppDelegate.swift */; };
 		A5D125D22370B18100537CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D125D12370B18100537CD9 /* SceneDelegate.swift */; };
 		A5D125D92370B18700537CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D125D82370B18700537CD9 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		A53B80012381974B007D46B4 /* CollectionPersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPersistenceHelper.swift; sourceTree = "<group>"; };
 		A53B8003238198A4007D46B4 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
 		A53B80072381CB33007D46B4 /* VenueDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDVC.swift; sourceTree = "<group>"; };
+		A54784BB2382483700FB3306 /* CreateCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCVCell.swift; sourceTree = "<group>"; };
 		A5D125CC2370B18100537CD9 /* FQ-Map-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FQ-Map-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D125CF2370B18100537CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D125D12370B18100537CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				A5D1263523723AE800537CD9 /* VenueImageCVCell.swift */,
 				A5D126772374CC1A00537CD9 /* CollectionsCVCell.swift */,
 				A53B7FE42376199F007D46B4 /* VenueListTVCell.swift */,
+				A54784BB2382483700FB3306 /* CreateCVCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				A53B8004238198A4007D46B4 /* CollectionModel.swift in Sources */,
 				A53B7FFB237F4ABD007D46B4 /* VenueImageModel.swift in Sources */,
 				A53B80082381CB33007D46B4 /* VenueDVC.swift in Sources */,
+				A54784BC2382483700FB3306 /* CreateCVCell.swift in Sources */,
 				A5D1263623723AE800537CD9 /* VenueImageCVCell.swift in Sources */,
 				A53B80022381974B007D46B4 /* CollectionPersistenceHelper.swift in Sources */,
 				A5D125F92370BA0400537CD9 /* NetworkManager.swift in Sources */,
