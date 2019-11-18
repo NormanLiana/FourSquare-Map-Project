@@ -27,6 +27,11 @@ class VenueDVC: UIViewController {
         return label
     }()
     
+    lazy var addVenueButton: UIBarButtonItem = {
+        let butt = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed))
+       return butt
+    }()
+    
     // MARK: - Properties
     var selectedVenue: Venue!
 
@@ -40,10 +45,16 @@ class VenueDVC: UIViewController {
         setUpVCViews()
     }
     
+    // MARK: - Objc Actions
+    @objc func addButtonPressed() {
+    
+    }
+    
     // MARK: - Private Methods
     private func setUpVCViews() {
         view.backgroundColor = .white
         navigationController?.isToolbarHidden = false
+        navigationItem.rightBarButtonItem = addVenueButton
     }
     
     private func addSubViews() {
