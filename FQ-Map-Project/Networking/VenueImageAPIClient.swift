@@ -12,7 +12,7 @@ class VenueImageAPIClient {
 
     static let shared = VenueImageAPIClient()
 
-    func getVenueImages(venueID: Venue, completionHandler: @escaping (Result<[VenueImage], AppError>) -> () ) {
+    func getVenueImages(venueID: String, completionHandler: @escaping (Result<[VenueImage], AppError>) -> () ) {
 
         let urlStr = "https://api.foursquare.com/v2/venues/\(venueID)/photos?client_id=\(Secret.clientID)&client_secret=\(Secret.clientKey)&v=20180323&limit=2"
         
