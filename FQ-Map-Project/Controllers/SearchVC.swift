@@ -64,6 +64,7 @@ class SearchVC: UIViewController {
     private var venues = [Venue]() {
         didSet {
            addAndRemoveAnnotations(venues: venues)
+            venueImageCollectionView.reloadData()
         }
     }
     
@@ -205,12 +206,42 @@ extension SearchVC: UICollectionViewDelegate {}
 
 extension SearchVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return venues.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = venueImageCollectionView.dequeueReusableCell(withReuseIdentifier: "VenueImageCVCell", for: indexPath) as? VenueImageCVCell {
-            cell.backgroundColor = .red
+            let venue = venues[indexPath.row]
+            cell.venueNameLabel.text = venue.name
+            
+            VenueImageAPIClient.shared.getVenueImages(venueID: venue.id) { (result) in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .failure(let error):
+                        print(error)
+                    case .success(let imageFromOnline):
+                        if imageFromOnline.isEmpty {
+                            cell.venueImage.image = UIImage(systemName: "photo.fill")
+                        } else {
+                            let firstImageStr = imageFromOnline[0]
+                            let urlStr = firstImageStr.imageUrlStr
+                            
+                            ImageHelper.shared.getImage(urlStr: urlStr) { (result) in
+                                DispatchQueue.main.async {
+                                    switch result {
+                                    case .failure(let error):
+                                        print(error)
+                                    case .success(let convertedImage):
+                                        cell.venueImage.image = convertedImage
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            
             return cell
         }
         return UICollectionViewCell()
