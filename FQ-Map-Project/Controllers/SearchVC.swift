@@ -219,6 +219,7 @@ extension SearchVC: UICollectionViewDataSource {
                     switch result {
                     case .failure(let error):
                         print(error)
+                        cell.venueImage.image = UIImage(systemName: "photo.fill")
                     case .success(let imageFromOnline):
                         if imageFromOnline.isEmpty {
                             cell.venueImage.image = UIImage(systemName: "photo.fill")
