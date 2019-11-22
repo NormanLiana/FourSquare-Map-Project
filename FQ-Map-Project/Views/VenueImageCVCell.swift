@@ -19,8 +19,8 @@ class VenueImageCVCell: UICollectionViewCell {
     
     lazy var venueNameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)
-        label.text = "Hello"
+        label.textColor = .green
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         label.numberOfLines = 0
         label.backgroundColor = .clear
