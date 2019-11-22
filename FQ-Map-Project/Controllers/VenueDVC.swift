@@ -43,6 +43,7 @@ class VenueDVC: UIViewController {
         constrainImage()
         setUpViews()
         setUpVCViews()
+        loadImage()
     }
     
     // MARK: - Objc Actions
@@ -64,6 +65,37 @@ class VenueDVC: UIViewController {
     
     private func setUpViews() {
         venueNameLabel.text = selectedVenue.name
+    }
+    
+    private func loadImage() {
+        VenueImageAPIClient.shared.getVenueImages(venueID: selectedVenue.id) { [weak self] (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    print(error)
+                    self?.venueImage.image = UIImage(systemName: "photo.fill")
+                case .success(let imageFromOnline):
+                    if imageFromOnline.isEmpty {
+                        self?.venueImage.image = UIImage(systemName: "photo.fill")
+                    } else {
+                        let firstImageStr = imageFromOnline[0]
+                        let urlStr = firstImageStr.imageUrlStr
+                        
+                        ImageHelper.shared.getImage(urlStr: urlStr) { [weak self] (result) in
+                            DispatchQueue.main.async {
+                                switch result {
+                                case .failure(let error):
+                                    print(error)
+                                case .success(let convertedImage):
+                                    self?.venueImage.image = convertedImage
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
     
     // MARK: - Contraint Methods
